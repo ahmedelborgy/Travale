@@ -1,0 +1,144 @@
+<nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column ">
+
+<section class=" container nav-head mb-3">
+
+  <div class="language-selector">
+   
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+<mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>language</mat-icon>
+        <span>AR</span>
+      </button>
+
+      <button mat-menu-item class="">
+        <mat-icon>language</mat-icon>
+        <span>EN</span>
+      </button>
+    
+      <button mat-menu-item class="" (click)="logOut2()">
+        <mat-icon>logout</mat-icon>
+        <span>logout</span>
+      </button>
+    
+    </mat-menu>
+    
+    <span>AR</span>
+    <mat-icon>language</mat-icon>
+
+  </div>
+  
+
+  <div class="social-icons w-75  ms-auto d-flex justify-content-end">
+           
+    <a href="#" class=" border-1 border border-white "><i class="fab fa-twitter"></i></a>
+    <a href="#" class="text-white ms-1 border-1 border border-white "><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white ms-1 border-1 border border-white "><i class="fab fa-tiktok"></i></a>
+    <a href="#" class="text-white ms-1 border-1 border border-white "><i class="fas fa-bell"></i></a>
+    
+  </div>
+
+</section>
+
+  <div class="container">
+    <div class="d-flex ms-3">
+            <!-- Buttons -->
+
+      <button class="btn btn-primary rounded-pill px-4 me-2">تسجيل
+        <i class="fa-regular fa-user"></i>      </button>
+    </div>
+
+    <!-- Toggle Button for Mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+      aria-label="Toggle navigation menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" [ngClass]="{ show: isMenuOpen }">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-gray-700" [ngClass]="hoverClass" href="#">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-700" [ngClass]="hoverClass" href="#">خدماتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-700" [ngClass]="hoverClass" href="#">الوجهات السياحية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-700" [ngClass]="hoverClass" href="#">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-700" [ngClass]="hoverClass" href="#">اتصل بنا</a>
+        </li>
+      </ul>
+          <!-- Logo -->
+
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="../../assets/logo.png" alt="Round in Oman" class="h-8" onerror="this.src='/assets/placeholder-logo.svg'" />
+      </a>
+     
+    </div>
+  </div>
+</nav>
+
+<header class="d-flex justify-content-end align-items-center">
+
+
+<!-- <section class="text-white text-end w-50 pe-5 title">
+<h1>اجعل رحلتـك أكثر تحـدياً</h1>
+<p>اسـكتشف العديد من الرحلات و الخدمات الرائعة</p>
+<button class="btn btn-primary dicover">
+  <i class="fa-solid fa-arrow-left"></i>
+  استكشف</button>
+</section> -->
+  <div class="layer d-flex justify-content-end align-items-center">
+    <section class="text-white text-end w-50 pe-5 title">
+      <h1>اجعل رحلتـك أكثر تحـدياً</h1>
+      <p>اسـكتشف العديد من الرحلات و الخدمات الرائعة</p>
+      <button class="btn btn-primary dicover">
+        <i class="fa-solid fa-arrow-left"></i>
+        استكشف</button>
+      </section>
+  </div>
+
+</header>
+
+
+
+
+<app-destinations></app-destinations>
+<app-services></app-services>
+<app-tourist-carousel></app-tourist-carousel>
+<app-footer></app-footer> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

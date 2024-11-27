@@ -1,0 +1,108 @@
+.login-register {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  
+    .form-container {
+      flex: 1;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      p{
+        color: #707070;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      button{
+        background-color: #189CCE;
+        padding-block: 25px;
+        border-radius: 50px;
+      }
+  span{
+    color: #189CCE;
+    font-size: 25px;
+    font-weight: 600;
+  }
+      h3 {
+        margin-bottom: 20px;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      button {
+        margin-top: 10px;
+      }
+    }
+  
+    .image-container {
+      flex: 1;
+      text-align: center;
+  
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+  
+      h2 {
+        color: #000;
+      }
+  
+    
+    }
+    .image-container{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: wheat;
+h1{
+    // text-align: end;
+}
+        .caption{
+            text-align: end;
+            padding-right: 10px;
+            p {
+                font-size: 1.5rem;
+                color:white;
+              }
+
+        }
+    }
+  }
+  input{
+    background-color: #CBCBCB;
+    border: 1px solid rgb(114, 111, 111);
+    outline: #707070;
+    padding:20px;
+    border-radius: 50px;
+margin-bottom: 4px;
+  }
+  input:focus{
+    border: 1px solid #189CCE;
+
+  }
+  input::placeholder{
+    text-align: end;
+  }
+  .bg{
+    width: 95%;
+  }
+
+
+  
+.row{
+    flex-direction: row;
+    }
+    // Media Queries for Responsiveness
+    
+    
+    @media screen and (max-width: 992px) {
+      
+.row{
+    flex-direction: column;
+    }
+    }
+    

@@ -1,0 +1,131 @@
+.tourist-carousel {
+    // background-color: #f9f9f9;
+    background-image: url(../../assets/bg.png);
+
+    padding: 2rem 0;
+  
+
+    .dicover{
+        background-color: #189CCE;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        z-index: 10;
+    }
+    h3{
+color: #189CCE;  
+  }
+  p{
+    color: #7A7A7A;
+    font-weight: 600;
+  }
+    // .card {
+    //   border: none;
+    //   border-radius: 10px;
+    //   overflow: hidden;
+    //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // .card-img-top {
+    //     height: 300px;
+    //     width: 25%;
+    //     object-fit: cover;
+    //     border-radius: 10px;
+
+
+    //   }
+  
+    //   .card-body {
+    //     background-color: #ac5a5a;
+    //     // background-color: rgba(192, 91, 91, 0.3);
+    //     // padding: 1rem;
+    //     // color: white;
+    //     // position: absolute;
+    //     // bottom: 0;
+    //     // left: 0;
+    //     // right: 0;
+    //     // width: 100%;
+    //   }
+      
+  
+    //   .price {
+    //     color: #007bff;
+    //     font-weight: bold;
+    //   }
+    // }
+  
+    button {
+      background-color: #189cce;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #007bff;
+      }
+    }
+  }
+  // .owl-nav {
+
+  //   position: absolute;
+  //   z-index: 10;
+  //   top: 0%;
+  //   width: 100%;
+  //   transform: translateY(-50%);
+  //   display: flex;
+  //   justify-content: space-between;
+  //   pointer-events: none; // Allow clicks on arrows without blocking carousel slides
+  //   .owl-prev,
+  //   .owl-next {
+  //     pointer-events: all; // Enable clicks on the buttons
+  //     background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+  //     border-radius: 50%;
+  //     width: 400px;
+  //     height: 400px;
+  //     padding: 200px;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     cursor: pointer;
+  //     transition: all 0.3s ease;
+  //     color: #fff;
+  
+  //     &:hover {
+  //       background-color: rgba(0, 0, 0, 0.7);
+  //     }
+  //   }
+  
+  //   .owl-prev {
+  //     position: absolute;
+  //     left: -20px; // Adjust as needed
+  //   }
+  
+  //   .owl-next {
+  //     position: absolute;
+  //     right: -20px; // Adjust as needed
+  //   }
+  // }
+  
+  // .fa {
+  //   font-size: 1.2rem; // Adjust arrow size
+  // }
+  // .owl-nav .icone{
+  //   background-color: #007bff;
+  //   padding: 10px;
+  //   border-radius: 50%;
+  // }
+// --------------
+
+
+  .tripImg{
+    height: 300px;
+    border: 0;
+    border-radius: 0;
+  }
+.layer{
+  color: #189cce;
+  width: 25%;
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  transform: rotate(90deg);
+}

@@ -1,0 +1,73 @@
+<section class="tourist-carousel">
+  
+    <div class="container py-4 position-relative">
+       <section class="row">
+
+        
+      <!-- Navigation Arrows -->
+      <section class="col-md-9">
+        <button class="btn btn-primary dicover">
+            <i class="fa-solid fa-arrow-left"></i>
+            استكشف</button>
+
+      <!-- <owl-carousel-o [options]="carouselOptions" > -->
+
+
+        <!-- <ng-container *ngFor="let trip of trips">
+          <ng-template carouselSlide>
+            <div class="card ">
+              <div class="position-relative  p-0 m-0 w-100">
+                <img [src]="trip.image" class="w-50 p-0 m-0 " height="300px" 
+                [alt]="trip.title" />
+                <div class="card-body text-end w-25">
+                  <h5 class="card-title">{{ trip.title }}</h5>
+                  <p class="card-text">{{ trip.description }}</p>
+                  <p class="price">{{ trip.price }} ريال</p>
+                </div>
+
+              </div>
+              
+            </div>
+
+          </ng-template>
+        </ng-container>
+ -->
+
+
+
+
+
+
+
+
+      <!-- </owl-carousel-o> -->
+
+
+
+
+
+
+
+      
+ <owl-carousel-o [options]="carouselOptions">
+  <ng-template carouselSlide *ngFor="let trip of trips" class="position-relative">
+    <img [src]="trip.image" [alt]="trip.title" class="tripImg"/>
+ <div class="layer  ">
+  <h5 class="text-white">{{ trip.title }}</h5>
+</div>
+  </ng-template>
+</owl-carousel-o>
+
+
+    </section>
+    <div class="col-md-3  w-25 pt-5">
+        <h3 class="text-end">الرحلات السياحية</h3>
+        <p class="text-end">استمتع باكتشاف رحلاتك السياحية المميزة</p>
+      </div>
+</section>
+
+     
+  
+    </div>
+  </section>
+  

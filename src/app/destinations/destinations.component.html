@@ -1,0 +1,17 @@
+<div class="destinations-section py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-2">اكتشف الوجهات</h2>
+    <p class="text-center mb-4">استمتع باستكشاف الرحلات الممتعة معنا</p>
+    
+    <div class="row g-4">
+      <div class="col-md-2 " *ngFor="let destination of destinations">
+        <div class="card">
+          <img [src]="destination.image" class="card-img-top" alt="{{destination.name}}" />
+          <div class="card-body text-center">
+            <h5 class="card-title">{{destination.name}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
