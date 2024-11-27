@@ -47,9 +47,11 @@ sendRegister(user:any):Observable<any>{
  }
  //--------- logOut---------------
  logOut():void{
+  localStorage.clear();
+localStorage.removeItem('userToken')
+localStorage.removeItem('checkLogin')
  this._Router.navigate(['/login']);
  this.is_login.next(false);
-
   }
 }
 
